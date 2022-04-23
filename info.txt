@@ -1,0 +1,45 @@
+Git and GitHub:
+
+	1. git clone URL -копия удаленного репозитория
+	2. git init инициализировать git
+	3. git remote add origin URL -соединяет локальный репозитрий с удаленным
+	4. git config --global --list 
+	-->user.name=abdufotihkhuja
+	-->user.email=formymac15@gmail.com
+	5. git remote 
+	-->origin
+	6. git remote -v 
+	-->origin URL1
+	-->origin URL2
+	...
+	7. get remote get-url origin
+	-->URL
+	8. git add . -staging area
+	9. git commit -repository
+	10. git branche -ветка
+	-->feature/DIS-5709-check
+	-->feature/DIS-5721-update
+	-->*master -подключенная ветка
+	11. git branch feature-branch -создание ветки
+	12. git branch -список ветки
+	-->feature-branch
+	-->feature/DIS-5709-check
+	-->feature/DIS-5721-update
+	-->*master -подключенная ветка
+	13. git checkout feature-branch -подключение к другой ветке
+	-->*feature-branch -подключенная ветка
+	-->feature/DIS-5709-check
+	-->feature/DIS-5721-update
+	-->master
+	14. git checkout -b awesome-feature -создание ветки и переключение к нему
+	-->Switched to a new branch 'awesome-feature'	
+	15. git checkout feature 
+		git merge master -соединение ветки feature и master
+	16. git merge master feature -соединение ветки feature и master
+	17. git checkout feature
+		git rebase master -соединение ветки feature с копией ветки master
+	18. git revert <commit> -Отменяем commit и переключаемся в другую
+	19. git commit --amend -изменяет прежний commit
+	20. git commit --amend -m "an update" -добавляет комментарии к предыдушеми commit
+	21. git commit --amend --no-edit -изменяет предудущий commit без изменения комментарий
+	
